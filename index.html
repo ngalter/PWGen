@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Password</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark fixed-top navbar-custom navbar-expand-lg mb-4">
+        <div class= "col">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1>Password Generator</h1>
+                    </div>
+                </div>
+        </div><!-- container -->
+        </div>
+    </nav>
+    <div class= "col d-flex">
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="top_space">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+            <div class="col mb-4">   
+                <div class="row mb-4">
+                    <div class="col-12" style="border-bottom: solid 2px gainsboro;">
+                    <h2>
+                        Password Generator
+                    </h2>
+                </div>
+            </div>
+        <div class="container">
+        <div class="row justify-content-center" style="background-color: #dddddd; border: solid 1px #cccccc;                                             border-radius: 3px;">
+                <div class="col-md-12 mt-4 mb-4">
+                        <div class="row"></div>
+                            <div class="col-md-12 mt-4 mb-4">
+                                <label for="textArea">Your Password</label>
+                                <textarea class="form-control" id="textArea" rows="3" readonly aria-label="Generated Password">Your Password</textarea>
+                            </div>
+                        </div>                    
+                        <div class="row align-items-center">
+                            <div class="col-md-12 mb-4">
+                                <div class="center_button">
+                                    <button id="generate" class="btn"  onclick="genPassword()">Generate Password</button>
+                                    <button id="clear" class="btn"onclick="clearPassword()">Clear Password</button>
+                                    <button id="copy" class="btn" onclick="clipBoard()">Copy to Clipboard</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div> 
+        <div class="fixed-bottom mt-4">
+                <span class="d-flex justify-content-center">Copyright <i class="far fa-xs fa-copyright"></i></span>
+        </div> 
+        <script src="assets/js/password.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
